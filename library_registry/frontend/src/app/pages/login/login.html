@@ -1,0 +1,32 @@
+<div class="auth-page">
+  <div class="glass-card">
+    <div class="glass-inner">
+      <h2 class="auth-title">Belépés</h2>
+      <p class="auth-subtitle">Lépj be a könyvtár-nyilvántartásba</p>
+
+      <form [formGroup]="form" (ngSubmit)="submit()" class="auth-form">
+        <mat-form-field appearance="outline">
+          <mat-label>Felhasználónév</mat-label>
+          <input matInput formControlName="username" autocomplete="username" />
+          <mat-error *ngIf="form.controls.username?.hasError('required')">Kötelező</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Jelszó</mat-label>
+          <input matInput type="password" formControlName="password" autocomplete="current-password" />
+          <mat-error *ngIf="form.controls.password?.hasError('required')">Kötelező</mat-error>
+        </mat-form-field>
+
+        <button mat-flat-button color="primary" class="full" [disabled]="loading || form.invalid">
+          {{ loading ? 'Belépés...' : 'Belépés' }}
+        </button>
+
+        <button mat-stroked-button type="button" class="full" (click)="goRegister()">
+          Nincs fiókom → Regisztráció
+        </button>
+      </form>
+
+      <div class="auth-hint">Alap user: admin / admin123</div>
+    </div>
+  </div>
+</div>

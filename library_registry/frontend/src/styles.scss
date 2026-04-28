@@ -1,0 +1,119 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+
+  background: radial-gradient(1200px circle at 10% 10%, rgba(33,150,243,0.35), transparent 55%),
+              radial-gradient(900px circle at 90% 20%, rgba(156,39,176,0.35), transparent 55%),
+              radial-gradient(900px circle at 40% 90%, rgba(0,150,136,0.30), transparent 55%),
+              linear-gradient(135deg, #0f172a 0%, #111827 55%, #0b1020 100%);
+}
+
+.app-page {
+  min-height: 100vh;
+  padding: 24px 16px;
+
+  background: radial-gradient(1200px circle at 10% 10%, rgba(33,150,243,0.25), transparent 55%),
+              radial-gradient(900px circle at 90% 20%, rgba(156,39,176,0.25), transparent 55%),
+              radial-gradient(900px circle at 40% 90%, rgba(0,150,136,0.22), transparent 55%),
+              linear-gradient(135deg, #0f172a 0%, #111827 55%, #0b1020 100%);
+}
+
+.dark-toolbar {
+  background: rgba(17, 24, 39, 0.65) !important;
+  color: rgba(255,255,255,0.92) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+
+.surface-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+  color: rgba(255,255,255,0.92);
+}
+
+.surface-card table {
+  width: 100%;
+  margin-top: 12px;
+  background: transparent;
+}
+
+.surface-card .mat-mdc-table,
+.surface-card .mat-mdc-header-row,
+.surface-card .mat-mdc-row {
+  background: transparent !important;
+}
+
+.surface-card .mat-mdc-header-cell {
+  color: rgba(255,255,255,0.80) !important;
+}
+
+.surface-card .mat-mdc-cell {
+  color: rgba(255,255,255,0.92) !important;
+}
+
+/* gombok / ikonok */
+.surface-card .mat-icon,
+.dark-toolbar .mat-icon {
+  color: rgba(255,255,255,0.90);
+}
+
+.glass-card {
+  width: min(520px, 100%);
+  border-radius: 18px;
+  padding: 8px;
+
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
+
+.glass-inner {
+  border-radius: 14px;
+  padding: 18px 18px 10px;
+
+  background: rgba(17, 24, 39, 0.55);
+}
+
+.auth-title {
+  color: rgba(255,255,255,0.92);
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.auth-subtitle {
+  color: rgba(255,255,255,0.70);
+  margin: 0 0 14px 0;
+  font-size: 13px;
+}
+
+.auth-form {
+  display: grid;
+  gap: 14px;
+}
+
+.full { width: 100%; }
+
+.mat-mdc-form-field .mdc-text-field--outlined {
+  background: rgba(255,255,255,0.06);
+  border-radius: 12px;
+}
+
+.auth-hint {
+  margin-top: 12px;
+  color: rgba(255,255,255,0.65);
+  font-size: 12px;
+  text-align: center;
+}

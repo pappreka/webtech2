@@ -1,0 +1,45 @@
+<h2 mat-dialog-title>Új könyv</h2>
+
+
+<div mat-dialog-content>
+  <form [formGroup]="form" class="grid">
+    <mat-form-field appearance="outline">
+      <mat-label>Cím</mat-label>
+      <input matInput formControlName="title" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Szerző</mat-label>
+      <input matInput formControlName="author" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>ISBN</mat-label>
+      <input matInput formControlName="isbn" />
+      <mat-error *ngIf="form.controls.isbn?.hasError('isbn')">
+  Érvénytelen ISBN (ellenőrző számjegy hibás)
+</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Kiadás éve</mat-label>
+      <input matInput type="number" formControlName="year" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Példányszám</mat-label>
+      <input matInput type="number" formControlName="copies" />
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-actions align="end">
+  <button mat-button (click)="cancel()">Mégse</button>
+  <button mat-flat-button color="primary" type="button" (click)="save()">
+  Mentés
+</button>
+</div>
+
+<style>
+  .grid { display: grid; gap: 12px; grid-template-columns: 1fr; }
+</style>

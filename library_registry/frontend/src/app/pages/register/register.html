@@ -1,0 +1,32 @@
+<div class="auth-page">
+  <div class="glass-card">
+    <div class="glass-inner">
+      <h2 class="auth-title">Új fiók</h2>
+      <p class="auth-subtitle">Hozz létre belépést (min. 3/6 karakter)</p>
+
+      <form [formGroup]="form" (ngSubmit)="submit()" class="auth-form">
+        <mat-form-field appearance="outline">
+          <mat-label>Felhasználónév</mat-label>
+          <input matInput formControlName="username" autocomplete="username" />
+          <mat-error *ngIf="form.controls.username?.hasError('required')">Kötelező</mat-error>
+          <mat-error *ngIf="form.controls.username?.hasError('minlength')">Minimum 3 karakter</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Jelszó</mat-label>
+          <input matInput type="password" formControlName="password" autocomplete="new-password" />
+          <mat-error *ngIf="form.controls.password?.hasError('required')">Kötelező</mat-error>
+          <mat-error *ngIf="form.controls.password?.hasError('minlength')">Minimum 6 karakter</mat-error>
+        </mat-form-field>
+
+        <button mat-flat-button color="primary" class="full" [disabled]="loading || form.invalid">
+          {{ loading ? 'Létrehozás...' : 'Regisztráció' }}
+        </button>
+
+        <button mat-stroked-button type="button" class="full" (click)="goLogin()">
+          Már van fiókom → Bejelentkezés
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
