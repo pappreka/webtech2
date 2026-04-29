@@ -169,13 +169,16 @@ Jelszó: admin123
 
 Ide helyezhető:
 
-* Login oldal
+Login oldal
   ![](bejelentkezes.png)
-* Regisztráció oldal
-  ![](regisztacio.png)
-* Könyvlista
+  
+Regisztráció oldal
+  ![](regisztracio.png)
+  
+Könyvlista
   ![](konyv_lista.png)
-* Új könyv hozzáadása
+  
+Új könyv hozzáadása
   ![](konyv_felvitel.png)
 
 ---
