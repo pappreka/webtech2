@@ -173,13 +173,13 @@ Login oldal
   <img src="images/bejelentkezes.png" width="500">
   
 Regisztráció oldal
-  ![](images/regisztracio.png)
+  <img src="images/regisztracio.png" width="500">
   
 Könyvlista
   ![](images/konyv_lista.png)
   
 Új könyv hozzáadása
-  ![](images/konyv_felvitel.png)
+  <img src="images/konyv_felvitel.png" width="500">
 
 ---
 
