@@ -167,18 +167,16 @@ Jelszó: admin123
 
 ## Képernyőképek
 
-Ide helyezhető:
-
-Login oldal
+### Bejelentkezés oldal
   <img src="images/bejelentkezes.png" width="500">
   
-Regisztráció oldal
+### Regisztráció oldal
   <img src="images/regisztracio.png" width="500">
   
-Könyvlista
+### Könyvlista
   ![](images/konyv_lista.png)
   
-Új könyv hozzáadása
+### Új könyv hozzáadása
   <img src="images/konyv_felvitel.png" width="500">
 
 ---
